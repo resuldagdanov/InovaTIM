@@ -1,4 +1,4 @@
-                              enA  ->  D10
+/*                            enA  ->  D10
                               enB  ->  D9
                               in1  ->  D2
 L298N DC Motor Sürücü         in2  ->  D3
@@ -12,7 +12,7 @@ L298N DC Motor Sürücü         in2  ->  D3
 HC-SD04 Ultrasonik Sensör     GND  ->  GND Arduino
                               Echo ->  D7
                               Trig ->  D6
-*******************************************************************
+***********************************************************************/
 
 // global değişkenlere pin numaralarını ata
 #define enA 10
