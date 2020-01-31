@@ -1,3 +1,14 @@
+/*                            enA  ->  D10
+                              enB  ->  D9
+                              in1  ->  D2
+L298N DC Motor Sürücü         in2  ->  D3
+                              in3  ->  D4
+                              in4  ->  D5
+                              GND  ->  GND Arduino  +  GND Batarya
+                              Vin  ->  Batarya 5V - 6V
+                              5Vout -> Arduino 5V
+*********************************************************************************/
+
 // global değişkenlere pin numaralarını ata
 #define enA 10
 #define enB 9
