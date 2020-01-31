@@ -1,0 +1,50 @@
+// global değişkenlere pin numaralarını ata
+#define enA 10
+#define enB 9
+#define in1 2
+#define in2 3
+#define in3 4
+#define in4 5
+
+// PWM sinyali 0-255 arasındadır
+int pwmOutput = 255;
+
+// setup fonksiyonunu başlat
+void setup()
+{
+  // 9600 Baud oranında Serial haberleşmeyi başlat
+  Serial.begin(9600);
+
+  // enable pinleri OUTPUT olarak tanımla
+  pinMode(enA, OUTPUT);
+  pinMode(enB, OUTPUT);
+
+  // dijital pinleri OUTPUT olarak tanımla
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(in3, OUTPUT);
+  pinMode(in4, OUTPUT);
+}
+
+// loop fonksiyonunu başlat
+void loop()
+{
+  analogWrite(enA, pwmOutput);  // L298N EnableA pinine PWM sinyal gönder
+  analogWrite(enB, pwmOutput);  // L298N EnableB pinine PWM sinyal gönder
+
+  // ileriye dogru git
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+
+  delay(5000); // 5 saniye bekle
+
+  // geriye dogru git
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+
+  delay(5000); // 5 saniye bekle
+}
