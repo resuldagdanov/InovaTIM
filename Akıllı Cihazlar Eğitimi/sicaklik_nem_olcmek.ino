@@ -15,6 +15,7 @@ void setup()
   delay(200);
 }
 
+// loop fonksiyonunun başlatılması
 void loop()
 {
   // sıcaklık verisinin sensörden okunması ve sicaklik değişkenine atanması
