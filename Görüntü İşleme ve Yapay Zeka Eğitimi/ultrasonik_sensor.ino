@@ -1,3 +1,9 @@
+/*                            VCC  ->  5Vout
+HC-SD04 Ultrasonik Sensör     GND  ->  GND Arduino
+                              Echo ->  D7
+                              Trig ->  D6
+***********************************************************************/
+
 // dijital pinleri tanımlamak
 const int trigPin = 6;
 const int echoPin = 7;
