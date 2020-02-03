@@ -1,7 +1,7 @@
 // wifi kütüphanesi eklemek
 #include <WiFi.h>
 
-# turta sıcaklık ve nem sensörünün kütüphanesinin eklenmesi
+// turta sıcaklık ve nem sensörünün kütüphanesinin eklenmesi
 #include <Turta_TempRH_Module.h>
 
 // alttaki üç değişken güncellenecek
